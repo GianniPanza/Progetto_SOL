@@ -15,8 +15,11 @@ void printCommand();
 int main(int argc, char const *argv[]){
 
 	int opt;
-	//char *myargv[argc];
-    int myargc = 0;
+	char *token;
+	//char *Tmpargv[argc] = *argv;
+
+
+	token = strtok(argv, ",");
 
 
     //controllo se da linea di comando non hanno inserito i comandi corretti e hanno avviato il client senza niente
@@ -48,15 +51,15 @@ int main(int argc, char const *argv[]){
 				
 				if(!f_use){
 					
-                    config.socket = optarg;
-                    f_use = true;
-                    break;
+                    			config.socket = optarg;
+                    			f_use = true;
+                    			break;
                 
 				} 
 				else {
                 
 					fprintf(stderr, "L'opzione -f può essere eseguita una sola volta.\n");
-                    return -1;
+                    			return -1;
                 
 				}
 
