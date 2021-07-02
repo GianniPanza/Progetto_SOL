@@ -77,7 +77,7 @@ int main(int argc, char const *argv[]){
 			
 			case 'D' :{
 				
-				//
+				//dirname : cartella in memoria secondaria dove vengono scritti (lato client) i file che il server rimuove a seguito di capacity misses
 				
 			}
 			
@@ -96,7 +96,7 @@ int main(int argc, char const *argv[]){
 			
 			case 'd' :{
 				
-				//aaaaaaaaaaaaaaa
+				//dirname : cartella in memoria secondaria dove scrivere i file letti dal server con l’opzione ‘-r’ o ‘-R’
 				
 			}
 			
@@ -109,25 +109,25 @@ int main(int argc, char const *argv[]){
 			
 			case 'l' :{
 				
-				//aaaaaaaaaaaaaaa
+				//file1[,file2] : lista di nomi di file su cui acquisire la mutua esclusione
 				
 			}
 			
 			case 'u' :{
 				
-				//aaaaaaaaaaaaaaa
+				//file1[,file2] : lista di nomi di file su cui rilasciare la mutua esclusione
 				
 			}
 			
 			case 'c' :{
 				
-				//aaaaaaaaaaaaaaa
+				//file1[,file2] : lista di file da rimuovere dal server se presenti
 				
 			}
 			
 			case 'p' :{
 				
-				//aaaaaaaaaaaaaaa
+				//abilita le stampe sullo standard output per ogni operazione
 				
 			}
 			
